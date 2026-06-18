@@ -1,0 +1,8 @@
+{
+  "sleep_seconds": 1,
+  "symbols": ["MSFT", "GOOGL"],
+  "outputs": [
+    {"kind": "csv_attr", "attr": "financials"},
+    {"kind": "json_attr", "attr": "info", "filename": "info.json"}
+  ]
+}

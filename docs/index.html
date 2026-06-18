@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Valuation Presentation - Michael Arman P.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Mermaid.js for Diagrams -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: "base",
+        flowchart: {
+          htmlLabels: true,
+          curve: "basis",
+          padding: 30,
+          useMaxWidth: false,
+        },
+        themeVariables: {
+          fontFamily: "Inter, system-ui, sans-serif",
+          fontSize: "16px",
+          primaryColor: "#f8fafc",
+          primaryTextColor: "#0f172a",
+          primaryBorderColor: "#e2e8f0",
+          lineColor: "#94a3b8",
+          secondaryColor: "#eff6ff",
+          tertiaryColor: "#f0fdf4",
+        },
+      });
+    </script>
+    <style>
+      .mermaid {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+      }
+      .mermaid svg {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      .group:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans leading-relaxed">
+    <!-- Hero Section -->
+    <header class="bg-slate-900 text-white pt-16 pb-0 px-6 shadow-xl">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1
+          class="text-5xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400"
+        >
+        Michael Partovi
+        </h1>
+        <p class="text-xl text-slate-200 mb-6">3 Years Bridging IT Service Management and Operations Automation: ITSM + Automation at Madrid-based Market Research SaaS
+        </p>
+
+        <!-- New: Website & QR Code Block -->
+        <div
+          class="inline-flex flex-col sm:flex-row items-center justify-center gap-16 mb-16 bg-slate-800/40 p-12 rounded-3xl border border-slate-700/60 shadow-lg backdrop-blur-sm"
+        >
+          <div class="text-center sm:text-right">
+            <p
+              class="text-base font-bold uppercase tracking-widest text-slate-400 mb-2"
+            >
+              My Professional Site
+            </p>
+            <a
+              href="https://www.mparto.de/"
+              target="_blank"
+              class="text-6xl font-extrabold text-blue-400 hover:text-blue-300 transition-colors flex items-center justify-center sm:justify-end gap-4 mb-4 group"
+            >
+              mparto.de
+              <i
+                class="fas fa-arrow-right text-4xl opacity-0 group-hover:opacity-100 transition-opacity"
+              ></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mparto/" target="_blank" class="mt-4 px-6 py-2 bg-[#0077b5] text-white rounded-full flex items-center gap-2 hover:bg-[#005582] transition-colors">
+              <i class="fab fa-linkedin text-xl"></i>
+              Connect on LinkedIn
+            </a>
+          </div>
+
+          <div class="hidden sm:block w-px h-48 bg-slate-700/50"></div>
+
+          <a
+            href="https://www.mparto.de/"
+            target="_blank"
+            class="shrink-0 block hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="qr-code.png"
+              alt="QR Code to My Website"
+              class="w-80 h-80 bg-white p-4 rounded-2xl shadow-2xl"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+      <!-- Marketing Cards -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Card 0: CX & Incident Response -->
+        <div
+          class="group p-10 bg-orange-50 rounded-[2.5rem] border border-orange-100 hover:bg-white hover:shadow-2xl transition-all duration-300"
+        >
+          <div
+            class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-orange-600 group-hover:text-white transition-colors"
+          >
+            <i class="fas fa-users text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">
+            CX & Incident Response
+          </h3>
+          <p class="text-slate-600 leading-relaxed text-lg">
+            Capturing the pulse of the business by managing critical incidents
+            and improving the end-user journey.
+          </p>
+        </div>
+
+        <!-- Card 1: ITSM Focus -->
+        <div class="group p-10 bg-slate-50 rounded-[2.5rem] border border-slate-100 hover:bg-white hover:shadow-2xl transition-all duration-300">
+          <div class="w-16 h-16 bg-slate-200 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-slate-900 group-hover:text-white transition-colors">
+            <i class="fas fa-clipboard-list text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-4">ITSM Mastery</h3>
+          <p class="text-slate-600 leading-relaxed text-lg">
+            Deep-diving into legacy ITSM data to understand current operational friction and hidden costs.
+          </p>
+        </div>
+
+        <!-- Card 2: The Bridge -->
+        <div class="group p-10 bg-blue-50 rounded-[2.5rem] border border-blue-100 hover:bg-white hover:shadow-2xl transition-all duration-300">
+          <div class="w-16 h-16 bg-blue-200 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <i class="fas fa-bridge text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-blue-900 mb-4">The Data Bridge</h3>
+          <p class="text-blue-800 leading-relaxed text-lg">
+            Using data analysis to pinpoint exactly where automation will yield the highest ROI.
+          </p>
+        </div>
+
+        <!-- Card 3: Automation Focus -->
+        <div class="group p-10 bg-emerald-50 rounded-[2.5rem] border border-emerald-100 hover:bg-white hover:shadow-2xl transition-all duration-300">
+          <div class="w-16 h-16 bg-emerald-200 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+            <i class="fas fa-robot text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-emerald-900 mb-4">Automation ROI</h3>
+          <p class="text-emerald-800 leading-relaxed text-lg">
+            Deploying targeted automation that transforms legacy bottlenecks into high-performance assets.
+          </p>
+        </div>
+      </div>
+  </body>
+</html>

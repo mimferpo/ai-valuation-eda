@@ -1,0 +1,17 @@
+# Python
+__pycache__/       # Compiled Python bytecode folder
+*.py[cod]          # Compiled Python files (.pyc, .pyo, .pyd)
+.ipynb_checkpoints # Jupyter notebook auto-save checkpoint folder
+.ruff_cache/       # Cache folder for Ruff (Python linter/formatter)
+.cache/            # General cache folder for various tools
+.venv/             # Python virtual environment folder
+
+
+# Local data (re-fetch with data_fetch/fetch.py)
+raw_data/**/*      # All raw downloaded files (regenerate with fetch.py)
+!raw_data/.gitkeep # Keep the raw_data folder placeholder
+
+# Generated analysis data (re-run SQL phases)
+analysis_data/**/* # All generated CSV files (regenerate with SQL phases)
+!analysis_data/.gitkeep # Keep the analysis_data folder placeholder
+

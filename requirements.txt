@@ -1,0 +1,9 @@
+numpy
+pandas
+yfinance
+jupyter
+ipykernel
+lxml
+duckdb
+streamlit
+plotly
